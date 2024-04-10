@@ -1,5 +1,5 @@
 export class paleta{
-    constructor(cor) {
-        this.cor = cor;
+    constructor(corAleatoria) {
+        this.corAleatoria = corAleatoria;
     }
 }

@@ -1,9 +1,4 @@
-import express from 'express'
-
-const app = express();
-const port = 4001;
-
-const paletas = [
+const paletasDeCores = [
     {"area": "Alimentação", "cores": "Laranja e Marrom", "codigos": "#FFA500, #8B4513, #D2691E"},
     {"area": "Alimentação", "cores": "Vermelho e Verde", "codigos": "#FF0000, #008000, #B22222"},
     {"area": "Alimentação", "cores": "Azul e Roxo", "codigos": "#0000FF, #800080, #4169E1"},
@@ -62,52 +57,59 @@ const paletas = [
     {"area": "Marketing", "cores": "Rosa e Verde", "codigos": "#FFC0CB, #008000, #FF69B4"}
  ];
 
-app.use (express.json());
+ let coresAleatorias = []
 
 function paleta () {
     return paleta
 }
 
-function paletaEscolhida (area) {
-    const escolhaIdeal = paletas.filter (paleta => paletas.area === area);
+function escolherPaletas (area) {
+    const escolhaIdeal = paletasDeCores.filter (paleta => paletasDeCores.area === area);
     return escolhaIdeal
 }
 
-app.get ("/paletaEscolhida", (req, res)=>{
+// get
+export function paletaEscolhida (req, res) {
     const {area} = req.body;
-    const paletasfiltrados = filtrarPaletas (area);
+    const paletasfiltrados = escolherPaletas (area);
     res.json ({paletasfiltrados});
-});
+}
 
 function filtrarCor (cor) {
     const coresFiltradas = cor.filter (cor => cor.cores === cores);
     return filtrarCor
 }
 
-app.get ("/filtrarCor", (req, res)=>{
+//get
+export function filtrarCores (req, res) {
     const {cores} = req.body;
-    const corFiltrada = filtrarcores (cores);
+    const corFiltrada = filtrarCor (cores);
     res.json ({corFiltrada});
-});
+}
 
-function paletaAleatoria (numero) {
-
-    let cores = [];
+function paletaAleatoria () {
 
     const chars = "0123456789ABCDEF";
 
-    for(let i = 0; i < numero; i++) {
+    for(let i = 0; i < 6; i++) {
         let color = "#";
         for(let a = 0; a <= 6; a++) {
             color += chars.charAt(Math.floor(Math.random()* chars.length))
         }
-        cores.push(color)
+        coresAleatorias.push(color)
     }
-    console.log(cores)
-    return cores;
+
+    return coresAleatorias;
 };
 
-paletaAleatoria(6);
+paletaAleatoria();
+console.log(coresAleatorias);
+
+//get
+export function paletaAleatorio (req, res) {
+    const aleatoriaPaleta = paletaAleatoria ();
+    res.json (aleatoriaPaleta)
+}
 
 
 
