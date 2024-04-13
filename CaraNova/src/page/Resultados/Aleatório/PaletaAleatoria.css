@@ -1,0 +1,39 @@
+.body {
+    margin: 0;
+    height: 600px;
+    width: 100%;
+    background-color: #E71D36;
+}
+
+.Resultados{
+    color: #011627;
+    padding-left: 100px;
+    padding-top: 130px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.Resultados h3 {
+    color: #011627;
+    text-shadow: 2px 2px 5px #174a73;
+    font-size: 40px;
+}
+  
+.Bloco {
+    height: 200px;
+    max-width: 100%;
+    width: 1000px;
+    padding: 15px;
+    border: 1px solid #FF9F1C;
+    background-color: #FF9F1C;
+    box-shadow: 2px 2px 5px #d9ae71;
+    border-radius: 20px;
+    color: #011627;
+    text-shadow: 0.5px 0.5px 1px #174a73;
+}
