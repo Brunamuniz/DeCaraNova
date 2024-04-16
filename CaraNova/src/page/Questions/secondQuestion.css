@@ -1,0 +1,52 @@
+.sencondQuizz {
+    color: #011627;
+    padding: 100px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .sencondQuizz h3 {
+    color: #4adacc;
+    font-size: 50px;
+  }
+  
+  .question2 {
+    font-size: 20px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+    width: 1000px;
+    padding: 15px;
+    border: 1px solid #011627;
+    background-color: #011627;
+    box-shadow: 2px 2px 5px #3f89c58c;
+    border-radius: 20px;
+    color: #FDFFFC;
+    text-shadow: 0.5px 0.5px 1px #3f88c5;
+  }
+  
+.butoesQuizz {
+  display: flex;
+  gap: 20px 
+}
+
+.Enviar2 {
+    background-color: #FF9F1C;
+    box-shadow: 2px 2px 8px #d19e58;
+}
+
+.butaoAleatorio, .Area {
+  background-color: #4adacc;
+  border-color: transparent;
+  color: #FDFFFC;
+  box-shadow: 2px 2px 8px #98c0bc;
+}
+
