@@ -11,7 +11,7 @@ function App() {
         <div class="conteudo">
           <div class="textHome">
             <h1 class="titulo">De Cara <span>Nova</span></h1>
-            <p>Escolha o nome e as cores da identidade visual da sua empresa com apenas 2 perguntas.</p>
+            <p>Se estiver com difuculdades na definição da identidade visual da sua marca, aqui você consegue escolher a paleta de sua empresa com apenas um click</p>
             <div class="Butoes">
               <Link to='/quizz'>
                 <button>Filtrar por Área</button>

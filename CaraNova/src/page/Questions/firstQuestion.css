@@ -16,9 +16,9 @@
     font-size: 50px;
   }
   
-  .question1 {
+  .question1, .Resultado {
     font-size: 20px;
-    height: 130px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -33,9 +33,8 @@
     text-shadow: 0.5px 0.5px 1px #3f88c5;
   }
   
-.Enviar {
-  background-color: #4adacc;
-  box-shadow: 2px 2px 8px #6fd0c6;
+.Opcao {
+  text-shadow: 0.5px 0.5px 2px #e3bf8c;
 }
 
 .butoesdoQuizz {

@@ -1,9 +1,11 @@
 import express from 'express'
-import { router } from '../Routes/index.js';
+import { router } from '../Backend/Routes/index.js';
+import cors from 'cors';
 
 const app = express();
-const port = 3030;
+const port = 3012;
 
+app.use (cors());
 app.use (express.json());
 app.use (router);
 

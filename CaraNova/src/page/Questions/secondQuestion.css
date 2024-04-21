@@ -16,9 +16,9 @@
     font-size: 50px;
   }
   
-  .question2 {
+  .question2, .resultados {
     font-size: 20px;
-    height: 130px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;

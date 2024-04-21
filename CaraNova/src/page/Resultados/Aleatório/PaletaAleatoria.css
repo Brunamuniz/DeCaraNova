@@ -26,14 +26,32 @@
 }
   
 .Bloco {
-    height: 200px;
+    height: 100%;
     max-width: 100%;
     width: 1000px;
     padding: 15px;
-    border: 1px solid #FF9F1C;
-    background-color: #FF9F1C;
+    border: 1px solid #2EC4B6;
+    background-color: #2EC4B6;
     box-shadow: 2px 2px 5px #d9ae71;
     border-radius: 20px;
     color: #011627;
+    box-shadow: 3px 3px 8px #011627;
     text-shadow: 0.5px 0.5px 1px #174a73;
+}
+
+.Voltar{
+    display: flex;
+    gap: 10px;
+}
+
+.voltarArea, .voltarCor{
+    border: 1px solid #011627;
+    background-color: #011627;
+    box-shadow: 2px 2px 5px #3f89c58c;
+}
+
+.Buscar{
+    border: 1px solid #E71D36;
+    background-color: #E71D36;
+    box-shadow: 2px 2px 5px #3f89c58c;
 }

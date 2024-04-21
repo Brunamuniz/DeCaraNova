@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { filtrarCores, paletaAleatorio, paletaEscolhida } from "../Controller/page.js";
 
-const paletasRoutes = Router ();
+const paletasRoutes = Router();
 
 paletasRoutes.get("/filtrarPorArea", paletaEscolhida);
 
